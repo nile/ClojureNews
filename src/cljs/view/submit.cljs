@@ -15,9 +15,10 @@
      [:td
       [:select {:id "submitTypeId" :name "type" :on-change #(change-component submit % "story")}
        [:option {:selected "selected"} "story"]
-       [:option "ask"]
-       [:option "job"]
-       [:option "event"]]]]
+       ;;[:option "ask"]
+       ;;[:option "job"]
+       ;;[:option "event"]
+       ]]]
 
     [:tr
      [:td

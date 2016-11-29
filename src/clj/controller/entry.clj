@@ -66,7 +66,7 @@
 
                                         [:style {:type "text/css"}]
 
-                                        [:title "Clojure News"]]
+                                        [:title "爱运维"]]
 
                                        [:body {:data-gr-c-s-loaded "true" :id "bodyId"}
 
@@ -87,13 +87,13 @@
                                                 [:td {:style "line-height:12pt; height:10px;"}
                                                  [:span {:class "pagetop"}
                                                   [:b {:class "brandname"}
-                                                   [:a {:id "headerMainId" :class "pagetopwhite", :href "/"} "Clojure News"]]
-                                                  [:a {:id "headerStoryId" :class "pagetopwhite", :href "/#!/story"} "story"] " | "
-                                                  [:a {:id "headerAskId" :class "pagetopwhite", :href "/#!/ask"} "ask"] " | "
-                                                  [:a {:id "headerNewId" :class "pagetopwhite", :href "/#!/new"} "new"] " | "
-                                                  [:a {:id "headerJobId" :class "pagetopwhite", :href "/#!/job"} "jobs"] " | "
-                                                  [:a {:id "headerEventId" :class "pagetopwhite", :href "/#!/event"} "events"] " | "
-                                                  [:a {:id "headerSubmitId" :class "pagetopwhite", :href "/#!/submit"} "submit"]]]
+                                                   [:a {:id "headerMainId" :class "pagetopwhite", :href "/"} "爱运维"]]
+                                                  [:a {:id "headerStoryId" :class "pagetopwhite", :href "/#!/story"} "文章"] " | "
+                                                  ;;[:a {:id "headerAskId" :class "pagetopwhite", :href "/#!/ask"} "ask"] " | "
+                                                  [:a {:id "headerNewId" :class "pagetopwhite", :href "/#!/new"} "最新"] " | "
+                                                  ;;[:a {:id "headerJobId" :class "pagetopwhite", :href "/#!/job"} "jobs"] " | "
+                                                  ;;[:a {:id "headerEventId" :class "pagetopwhite", :href "/#!/event"} "events"] " | "
+                                                  [:a {:id "headerSubmitId" :class "pagetopwhite", :href "/#!/submit"} "投递"]]]
                                                 [:td {:style "text-align:right;padding-right:4px;"}
                                                  [:span {:id "pageTopId", :class "pagetop"}
                                                   (if-let [user (get-user ctx)]
