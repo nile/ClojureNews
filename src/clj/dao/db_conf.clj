@@ -4,11 +4,11 @@
 
 (def dbuser "")
 (def dbpwd "")
-(def dbname "")
-(def dbhost "")
+(def dbname "hn")
+(def dbhost "127.0.0.1")
 
 (defn- build-conn-uri []
-  (str "mongodb://" dbuser ":" dbpwd "@" dbhost "/" dbname))
+  (str "mongodb://" dbhost "/" dbname))
 
 (defn- get-conn-uri []
   (let [mongodb-uri (System/getenv "MONGODB_URI")]
