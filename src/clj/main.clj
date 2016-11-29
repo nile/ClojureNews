@@ -44,6 +44,6 @@
                             :join? false}))
 
 (defn -main []
-  (let [port (Integer. (or (System/getenv "PORT") "8080"))]
+  (let [port (Integer. (or (System/getenv "PORT") "8888"))]
     (db-conf/init-db)
     (start port)))
