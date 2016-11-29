@@ -137,7 +137,8 @@
                                               [:br]
                                               [:br]]]]]]]
                                         [:script {:src "/js/clojure-news.js", :type "text/javascript"}]
-                                        [:script (resource-util/create-google-analytics-code "UA-54741200-3")]]]))
+                                        ;;[:script (resource-util/create-google-analytics-code "UA-54741200-3")]
+                                        ]]))
 
             :handle-exception (fn [_]
                                 "Something went wrong")))
@@ -158,7 +159,7 @@
                                (resource-util/create-rss-item (str/escape (:title story) {\< "&lt;", \> "&gt;", \& "&amp;", \" "&quot;", \' "&apos;"})
                                                               (str/escape (:url story) {\< "&lt;", \> "&gt;", \& "&amp;", \" "&quot;", \' "&apos;"})
                                                               (:created-date story)
-                                                              (str "https://clojure.news/#!/story/" (:_id story)))))))
+                                                              (str "http://i.writecode.online/#!/story/" (:_id story)))))))
 
             :handle-exception #(resource-util/get-exception-message %)))
 
